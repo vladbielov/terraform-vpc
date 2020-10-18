@@ -41,12 +41,26 @@ variable "az3" {
   type    = string
 }
 
-variable "s3_bucket" {}
-variable "s3_tfstate_file" {}
-variable "s3_folder_project" {}
-variable "s3_folder_region" {}
-variable "s3_folder_type" {}
-variable "region" {}
+
+variable "s3_bucket" {
+  type    = string 
+}
+variable "s3_tfstate_file" {
+  type    = string
+}
+variable "s3_folder_project" {
+  type    = string
+}
+variable "s3_folder_region" {
+  type    = string
+}
+variable "s3_folder_type" {
+  type    = string
+}
+variable "region" {
+  type    = string
+}
+
 
 
 module "vpc" {
